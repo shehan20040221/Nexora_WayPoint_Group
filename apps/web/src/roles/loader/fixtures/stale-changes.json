@@ -1,0 +1,8 @@
+{
+  "publishedBy":"Dispatcher · 03:16",
+  "changes":[
+    {"label":"Stop sequence updated: Ja-Ela must unload first","was":"Stop 03","now":"Stop 01"},
+    {"label":"Chilled quantity increased: two late-confirmed dairy totes added","was":"4 totes","now":"6 totes"},
+    {"label":"One case removed: moved to another trip","was":"12 cases","now":"11 cases"}
+  ]
+}

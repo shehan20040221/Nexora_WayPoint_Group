@@ -1,0 +1,9 @@
+{
+  "route":{"id":"RT-12","vehicleId":"VEH014","status":"in_progress","name":"Gampaha Fresh run"},
+  "stops":[
+    {"id":"S1","seq":1,"orderId":"ORD-2048","outletName":"Waypoint Fresh Ja-Ela","address":"Colombo Rd, Ja-Ela","windowOpen":"05:00","windowClose":"07:30","parcels":6,"temp":"chilled","status":"next","eta":"05:12","instructions":"Rear dock behind the supermarket. Ring the bell twice."},
+    {"id":"S2","seq":2,"orderId":"ORD-2051","outletName":"Waypoint Fresh Wattala","address":"Negombo Rd, Wattala","windowOpen":"05:00","windowClose":"07:30","parcels":5,"temp":"chilled","status":"upcoming","eta":"05:40","instructions":"Curbside unloading. Park by the green gate."},
+    {"id":"S3","seq":3,"orderId":"ORD-2057","outletName":"Waypoint Fresh Kiribathgoda","address":"Kandy Rd, Kiribathgoda","windowOpen":"05:30","windowClose":"07:45","parcels":4,"temp":"ambient","status":"upcoming","eta":"06:10","instructions":"Rear dock. Security desk signs for deliveries."},
+    {"id":"S4","seq":4,"orderId":"ORD-2063","outletName":"Waypoint Fresh Kelaniya","address":"High Level Rd, Kelaniya","windowOpen":"05:30","windowClose":"07:45","parcels":3,"temp":"chilled","status":"upcoming","eta":"06:35","instructions":"Shared bay. Collect the bay token at the gate."}
+  ]
+}

@@ -2,21 +2,23 @@ services:
   db:
     image: postgres:16-alpine
     environment:
-      POSTGRES_USER: ${POSTGRES_USER:-waypoint}
+      POSTGRES_USER: waypoint
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-waypoint}
-      POSTGRES_DB: ${POSTGRES_DB:-waypoint}
-    volumes: [dbdata:/var/lib/postgresql/data]
+      POSTGRES_DB: waypoint
+    ports: ["5433:5432"]
+    volumes: [pgdata:/var/lib/postgresql/data]
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-waypoint}"]
+      test: ["CMD-SHELL", "pg_isready -U waypoint"]
       interval: 3s
       retries: 20
-    ports: ["5433:5432"]
   api:
     build: { context: ., dockerfile: apps/api/Dockerfile }
-    env_file: .env
-    environment:
-      DATABASE_URL: postgres://${POSTGRES_USER:-waypoint}:${POSTGRES_PASSWORD:-waypoint}@db:5432/${POSTGRES_DB:-waypoint}
     depends_on: { db: { condition: service_healthy } }
-    ports: ["4001:4000"]
-volumes:
-  dbdata:
+    environment:
+      DATABASE_URL: postgres://waypoint:${POSTGRES_PASSWORD:-waypoint}@db:5432/waypoint
+      JWT_SECRET: ${JWT_SECRET:-dev-secret-change-me}
+      SEED_PASSWORD: ${SEED_PASSWORD:-ChangeMe123!}
+      DEMO_FALLBACK: ${DEMO_FALLBACK:-1}
+      ALLOW_SAMPLE_DATA: ${ALLOW_SAMPLE_DATA:-1}
+    ports: ["4001:4000"]   # API (and the built web app, once apps/web/dist exists) on http://localhost:4001
+volumes: { pgdata: {} }

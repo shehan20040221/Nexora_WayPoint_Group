@@ -1,0 +1,11 @@
+{
+  "trip":{"id":"TRP-001","vehicleId":"VEH014","plate":"WP-4014","departurePlanned":"03:45","version":12,"status":"loading","units":40,"fillPct":78,"stops":3,"driver":"R. Bandara","door":"Door 04"},
+  "planVersion":12,"currentVersion":12,"stale":false,"changes":[],
+  "lines":[
+    {"id":"L1","stopSeq":3,"outletName":"Waypoint Fresh Ja-Ela","item":"Chilled dairy tote","sku":"6612","qty":4,"unit":"totes","zone":"COLD · C-12","temp":"chilled","status":"pending"},
+    {"id":"L2","stopSeq":3,"outletName":"Waypoint Fresh Ja-Ela","item":"Produce crate","sku":"1884","qty":6,"unit":"crates","zone":"ZONE B · B-04","temp":"chilled","status":"pending"},
+    {"id":"L3","stopSeq":2,"outletName":"Waypoint Fresh Wattala","item":"Bakery tray stack","sku":"4409","qty":8,"unit":"trays","zone":"ZONE A · A-17","temp":"ambient","status":"pending"},
+    {"id":"L4","stopSeq":2,"outletName":"Waypoint Fresh Wattala","item":"Ambient grocery case","sku":"2931","qty":12,"unit":"cases","zone":"ZONE A · A-08","temp":"ambient","status":"pending"},
+    {"id":"L5","stopSeq":1,"outletName":"Waypoint Fresh Kiribathgoda","item":"Frozen meal carton","sku":"9055","qty":10,"unit":"cartons","zone":"FREEZER · F-02","temp":"chilled","status":"pending"}
+  ]
+}

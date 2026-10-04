@@ -1,0 +1,8 @@
+[
+  {"id":"TRP-001","vehicleId":"VEH014","plate":"WP-4014","departurePlanned":"03:45","version":12,"status":"loading","units":40,"fillPct":78,"stops":3},
+  {"id":"TRP-002","vehicleId":"VEH021","plate":"WP-4021","departurePlanned":"04:00","version":12,"status":"ready","units":33,"fillPct":64,"stops":4},
+  {"id":"TRP-003","vehicleId":"VEH008","plate":"WP-4008","departurePlanned":"04:20","version":12,"status":"ready","units":27,"fillPct":51,"stops":3},
+  {"id":"TRP-004","vehicleId":"VEH033","plate":"WP-4033","departurePlanned":"04:40","version":12,"status":"held","units":48,"fillPct":86,"stops":5},
+  {"id":"TRP-005","vehicleId":"VEH019","plate":"WP-4019","departurePlanned":"05:10","version":12,"status":"ready","units":21,"fillPct":40,"stops":2},
+  {"id":"TRP-006","vehicleId":"VEH027","plate":"WP-4027","departurePlanned":"05:30","version":12,"status":"released","units":14,"fillPct":29,"stops":2}
+]

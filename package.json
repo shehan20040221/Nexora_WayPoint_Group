@@ -1,3 +1,0 @@
-{"name":"waypoint","private":true,"workspaces":["packages/*","apps/*"],
-"scripts":{"test":"npm test -w @waypoint/engine","typecheck":"tsc -p apps/api --noEmit && tsc -p packages/engine --noEmit && tsc -p packages/shared --noEmit","format":"prettier --write .","dev:api":"npm run dev -w @waypoint/api"},
-"devDependencies":{"typescript":"^5.5.0","prettier":"^3.3.0","@types/node":"^20.14.0"}}

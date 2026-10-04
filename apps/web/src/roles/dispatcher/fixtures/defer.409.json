@@ -1,0 +1,6 @@
+{
+  "error": "Fresh Gampaha 32 was skipped on the previous run. Deferring again risks starving this outlet.",
+  "needsConfirm": true,
+  "starvation": true,
+  "message": "Fresh Gampaha 32 was skipped on the previous run. Deferring again risks starving this outlet."
+}
