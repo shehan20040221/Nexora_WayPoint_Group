@@ -111,10 +111,10 @@ function OverviewScreen() {
               <Button variant="primary" className="w-full justify-center">Go to Route Planning & Suggestion</Button>
             </Link>
             <Link to="/dispatcher/orders">
-              <Button variant="secondary" className="w-full justify-center">Review Confirmed Order Queue</Button>
+              <Button variant="outline" className="w-full justify-center">Review Confirmed Order Queue</Button>
             </Link>
             <Link to="/dispatcher/exceptions">
-              <Button variant="secondary" className="w-full justify-center">View Dock Exceptions (2 Open)</Button>
+              <Button variant="outline" className="w-full justify-center">View Dock Exceptions (2 Open)</Button>
             </Link>
           </div>
         </Card>
@@ -261,7 +261,7 @@ function PlanningScreen() {
           <p className="text-sm text-gray-500">Status: {plan?.status?.toUpperCase() || 'DRAFT'} • Version: {plan?.version || 1}</p>
         </div>
         <div className="space-x-3">
-          <Button variant="secondary" onClick={handleSuggest} disabled={loading}>
+          <Button variant="outline" onClick={handleSuggest} disabled={loading}>
             {loading ? 'Calculating...' : 'Suggest Plan'}
           </Button>
           <Button variant="primary" onClick={handlePublish} disabled={loading}>
